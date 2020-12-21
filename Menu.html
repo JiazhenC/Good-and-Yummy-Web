@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset = "utf-8">
+	<title>G&Y Menu</title>
+	<meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+	<link rel = "stylesheet" href = "design.css">
+</head>
+<body>
+	
+	<header>	
+		<nav>
+			<a href="Home.html"><image class = "logo" height = 80 src= "https://github.com/ahlongyap99/G-Y-Webpage-Design/raw/master/G%26Y%20PICS/logo.png" alt="Logo"></image></a>
+			<ul>
+				<li><a href="page.html" class="headerbutton">&ensp;About&ensp;</a></li>
+				<li><a href="Menu.html" class="headerbutton" style="font-weight: bold; color: brown; font-size: 18px;">&ensp;Menu&ensp;</a></li>
+				<li><a href="#" class="headerbutton">&ensp;Location&ensp;</a></li>
+				<li><a href="Cart.html" class="headercart"><image id="cart" height = "30" src = "https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/cart.png" alt="Cart"></image> </a></li>
+				<li class="dropdown"><a href="#" class="headerprofile"><image height ="40" src = "https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ppic.png" alt="Profile"></image></a>
+					<div class="dropdown-content">
+						<a href="#">Profile</a>
+						<a href="#">Setting</a>
+						<a href="#">Log Out</a>
+					</div></li>
+			</ul>
+		</nav>
+	</header>
+
+			<br><br><br><br>
+			<div class="btn-group" id="lunchbox">
+			  <button id="boxbtn1" class="box active">Lunch Box 1</button>
+			  <button id="boxbtn2" class="box">Lunch Box 2</button>
+			  <button id="boxbtn3" class="box">Lunch Box 3</button>
+			  <button id="morefood">+ Add</button>
+			  <button id="lessfood">- Remove</button>
+			  <button id="checkoutbtn" onclick="window.location.href='Cart.html'">View Cart</button>
+			</div>
+
+			<div id="box1" class="modal">
+				  	<div class="modal-content">
+				    	<span class="close1">&times;</span>
+				    	<p>You are in <b>Lunch Box 1</b></p>
+			  		</div>
+			</div>
+
+			<div id="box2" class="modal">
+				  	<div class="modal-content">
+				    	<span class="close2">&times;</span>
+				    	<p>You are in <b>Lunch Box 2</b></p>
+			  		</div>
+			</div>
+
+			<div id="box3" class="modal">
+				  	<div class="modal-content">
+				    	<span class="close3">&times;</span>
+				    	<p>You are in <b>Lunch Box 3</b></p>
+			  		</div>
+			</div>
+
+			<div class="menunav">
+			  	<button class="tablinks" id="defaultOpen" onclick="openMenu(event, 'Rice')">Rice</button>
+  				<button class="tablinks" onclick="openMenu(event, 'Chicken')">Chicken</button>
+ 				<button class="tablinks" onclick="openMenu(event, 'Fish')">Fish</button>
+ 				<button class="tablinks" onclick="openMenu(event, 'Vegetable')">Vegetable</button>
+ 				<button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
+ 				<button class="tablinks" onclick="openMenu(event, 'Soup')">Soup</button>
+			</div>
+
+			<!-- Rice Menu -->
+			<div id="Rice" class="tabcontent">
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/RiceWhite.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>White Rice</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/RiceBrownRice.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Brown Rice</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/RiceBiryaniRice.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Biryani Rice</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/RiceFriedrice.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Fried Rice</p>
+  						</div>
+				  </div>
+			</div>
+
+			<!-- Chicken Menu -->
+			<div id="Chicken" class="tabcontent">
+				  <br><br><br><br>		  	
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenFried.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Fried</p>
+  						</div>
+
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenSteamed.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Steamed</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenCurry.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Curry</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenRoast.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Roasted</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenSweet%26Sour.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Sweet & Sour</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenKungPao.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Kung Pao</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenMarmite.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Marmite</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenCreamyButter.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Creamy Butter</p>
+  						</div>
+				  </div>
+
+				   <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenBoiledEgg.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Hard Boiled Egg</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenFriedEgg.jpeg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Fried Egg</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/ChickenFuyongEgg.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Fuyong Egg</p>
+  						</div>
+				  </div>
+
+			</div>
+
+			<!-- Fish Menu -->
+			<div id="Fish" class="tabcontent">
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishFried.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Fried</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishCurry.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Curry</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishSteamed.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Steamed</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishKungPoa.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Kung Pao</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishLemonButter.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Lemon Butter</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishSweet%26Sour.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Sweet & Sour</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/FishNugget.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM3.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Nuggets</p>
+  						</div>
+				  </div>
+
+			</div>
+
+
+			<!-- Vegetable Menu -->
+			<div id="Vegetable" class="tabcontent">
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableCauliflower.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Cauliflower</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableBroccoli.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Broccoli</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableKaiLan.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Kai Lan</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableChoySum.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Choy Sum</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableCabbage.jpeg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Cabbage</p>
+  						</div>
+				  </div>
+
+				 <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableWongBok.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Wong Bok</p>
+  						</div>
+				  </div>
+
+				   <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableTofu.JPG"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Soy Sauce Tofu</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableKangkung.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Kangkung</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/VegetableFriedMushroom.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.00<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Fried Mushroom</p>
+  						</div>
+				  </div>
+			</div>
+
+
+			<!-- Drinks Menu -->
+			<div id="Drinks" class="tabcontent">
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/DrinkCoke.png"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Coke</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/DrinkSprite.png"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Sprite</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/Drink100plus.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>100 plus</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/Drink7up.png"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM2.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>7 Up</p>
+  						</div>
+				  </div>
+
+				  
+				  
+			</div>
+
+			<!-- Soup Menu -->
+			<div id="Soup" class="tabcontent">
+				  <br><br><br><br>
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/SoupABC.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>ABC</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/SoupChicken.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Chicken Soup</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/SoupMushroom.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Mushroom Soup</p>
+  						</div>
+				  </div>
+
+				  <div class="container">
+				  		<image class="picSize" src="https://github.com/ahlongyap99/G-Y-Webpage-Design/raw/master/G%26Y%20PICS/SoupCabbage%26porkmeat.jfif"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>Cabbage & Pork</p>
+  						</div>
+				  </div>
+
+				   <div class="container">
+				  		<image class="picSize" src="https://github.com/ahlongyap99/G-Y-Webpage-Design/raw/master/G%26Y%20PICS/SoupWhiteRadish.jpg"></image>
+				  		<button class="btn" onclick="cartAdded()">+RM1.50<br>Add to Lunch Box</button>
+				  		<div class="description">
+ 							<p>White Radish</p>
+  						</div>
+				  </div>
+			</div>
+
+			<script>
+					function openMenu(evt, menuName) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					 for (i = 0; i < tabcontent.length; i++) {
+					 	 tabcontent[i].style.display = "none";
+					  }
+					  tablinks = document.getElementsByClassName("tablinks");
+					  for (i = 0; i < tablinks.length; i++) {
+					    tablinks[i].className = tablinks[i].className.replace(" active", "");
+					  }
+					  document.getElementById(menuName).style.display = "block";
+					  evt.currentTarget.className += " active";
+					}
+
+					document.getElementById("defaultOpen").click();
+			</script>
+
+			<script>
+				function cartAdded(){
+				document.getElementById("cart").src="https://raw.githubusercontent.com/ahlongyap99/G-Y-Webpage-Design/master/G%26Y%20PICS/cartwithreddot.png";
+				}
+			</script>
+
+			<script>
+				// Add active class to the current button (highlight it)
+				var header = document.getElementById("lunchbox");
+				var btns = header.getElementsByClassName("box");
+				for (var i = 0; i < btns.length; i++) {
+				  btns[i].addEventListener("click", function() {
+				  var current = document.getElementsByClassName("active");
+				  current[0].className = current[0].className.replace(" active", "");
+				  this.className += " active";
+				  });
+				}
+			</script>
+
+			<script>
+				// Get the modal
+				var modal1 = document.getElementById("box1");
+
+				var modal2 = document.getElementById("box2");
+
+				var modal3 = document.getElementById("box3");
+
+				// Get the button that opens the modal
+				var btn1 = document.getElementById("boxbtn1");
+
+				var btn2 = document.getElementById("boxbtn2");
+
+				var btn3 = document.getElementById("boxbtn3");
+
+				// Get the <span> element that closes the modal
+				var span1 = document.getElementsByClassName("close1")[0];
+
+				var span2 = document.getElementsByClassName("close2")[0];
+
+				var span3 = document.getElementsByClassName("close3")[0];
+
+				// When the user clicks the button, open the modal 
+				btn1.onclick = function() {
+				  modal1.style.display = "block";
+				}
+
+				btn2.onclick = function() {
+				  modal2.style.display = "block";
+				}
+
+				btn3.onclick = function() {
+				  modal3.style.display = "block";
+				}
+
+
+				// When the user clicks on <span> (x), close the modal
+				span1.onclick = function() {
+				  modal1.style.display = "none";
+				}
+
+				span2.onclick = function() {
+				  modal2.style.display = "none";
+				}
+
+				span3.onclick = function() {
+				  modal3.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				  if (event.target == modal1) {
+				    modal1.style.display = "none";
+				  }
+				}
+
+				window.onclick = function(event) {
+				  if (event.target == modal2) {
+				    modal2.style.display = "none";
+				  }
+				}
+
+				window.onclick = function(event) {
+				  if (event.target == modal2) {
+				    modal3.style.display = "none";
+				  }
+				}
+
+			</script>
+</body>
+</html>
